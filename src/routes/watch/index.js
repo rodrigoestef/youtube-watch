@@ -9,7 +9,7 @@ export default () =>{
     const history = useHistory()
     const videoId = url.split('v=')[1]
     if (!videoId) {
-        history.goBack()
+        history.push('/')
     }
 
     const click = ({key,target}) =>{
